@@ -1,5 +1,6 @@
 const express = require('express')
 const router = require('./routes/router')
+require("dotenv").config();
 
 const app = express()
 
@@ -8,7 +9,7 @@ const port = 3000
 app.set('view engine', 'ejs')
 app.set('views', 'views')
 
-app.use(express.static('static'))
+app.use(express.static("static"));
 app.use('/', router)
   
 app.listen(port, () => {

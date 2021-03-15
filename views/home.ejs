@@ -1,7 +1,15 @@
+<link rel="stylesheet" type="text/css" href="/styles/style.css">
+
 <h1>Mars Rover Photos</h1>
 
 <ul>
-
+  <% solData.forEach(item=> { %>
+    <li>
+      <img src="<%= item.photos[0].img_src %>" alt="">
+    </li>
+    <% }) %>
 </ul>
 
-<h2><%= averageTemp %></h2>
+<h2>
+  <%= averageTemp %>
+</h2>
