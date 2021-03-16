@@ -19,8 +19,6 @@ const home = async (req, res) => {
 
     solData.push(sol3058Data, sol3057Data, sol3056Data, sol3055Data, sol3054Data, sol3053Data)
 
-    console.log(solData.length)
-
     res.render('home', {
       averageTemp: avTemp,
       solData: solData,

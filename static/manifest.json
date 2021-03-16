@@ -1,0 +1,17 @@
+{
+  "name": "PWA",
+  "short_name": "PWA",
+  "description": "Simple PWA with Node.js fetching API data",
+  "icons": [
+    {
+      "src": "/images/pwa.png",
+      "type": "image/png",
+      "sizes": "200x200"
+    }
+  ],
+  "lang": "nl-NL",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "black",
+  "scope": "/"
+}
