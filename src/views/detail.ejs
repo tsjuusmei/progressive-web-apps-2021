@@ -1,0 +1,18 @@
+<%- include('./components/head') -%>
+
+  <h1>Mars Rover Photo's</h1>
+  <h2>SOL: <%= sol %></h2>
+  <h2>Earth Date: <%= solData[0].earth_date %> </h2>
+
+  <ul>
+    <% solData.forEach(item=> { %>
+      <li>
+        <img src="<%= item.img_src %>" alt="">
+        <p>SOL: <%= item.sol %>
+        </p>
+        <p>Earth date: <%= item.earth_date %>
+        </p>
+      </li>
+      <% }) %>
+  </ul>
+  

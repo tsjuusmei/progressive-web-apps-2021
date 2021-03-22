@@ -2,7 +2,6 @@ const cacheName = "cache"
 const coreAssets = ["./manifest.json", "/offline", "./styles/style.css", "./js/script.js", "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap"] 
 
 self.addEventListener('install', (event) => {
-  console.log("Installed")
   event.waitUntil(
       caches.open(cacheName)
       .then(cache => cache.addAll(coreAssets))
@@ -11,13 +10,11 @@ self.addEventListener('install', (event) => {
 })
 
 self.addEventListener("activate", (event) => {
-  console.log("Activated")
   event.waitUntil(clients.claim())
 })
 
 self.addEventListener("fetch", (event) => {
   const req = event.request
-  console.log("Fetching:" + req.url)
 
   /* Save all requests to cache */
   event.respondWith(

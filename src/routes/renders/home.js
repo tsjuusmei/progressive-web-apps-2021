@@ -22,6 +22,7 @@ const home = async (req, res) => {
     res.render('home', {
       averageTemp: avTemp,
       solData: solData,
+      title: 'Mars Rover Photos'
     })
   } catch (err) {
     console.log(err)

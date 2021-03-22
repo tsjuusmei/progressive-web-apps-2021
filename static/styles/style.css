@@ -31,3 +31,7 @@ li img {
 li p {
   grid-column-start: 2;
 }
+
+a {
+  text-decoration: none;
+}
