@@ -12,6 +12,7 @@
   "lang": "nl-NL",
   "start_url": "/",
   "display": "standalone",
+  "background_color": "white",
   "theme_color": "black",
   "scope": "/"
 }
