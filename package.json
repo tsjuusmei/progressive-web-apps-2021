@@ -9,11 +9,9 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "watch": "concurrently --kill-others \"npm run watch:css\" \"npm run watch:js\"",
+    "watch": "concurrently --kill-others \"npm run watch:css\"",
     "watch:css": "chokidar \"src/css/*.css\" --c \"npm run build:css\"",
-    "watch:js": "chokidar \"src/scripts/client/*.js\" --c \"npm run build:js\"",
-    "build:css": "node scripts/build-css.js",
-    "build:js": "node scripts/build-js.js"
+    "build:css": "node scripts/build-css.js"
   },
   "repository": {
     "type": "git",
