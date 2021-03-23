@@ -1,5 +1,5 @@
 const cacheName = "cache"
-const coreAssets = ["./manifest.json", "/offline", "./styles/style.css", "./js/script.js", "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap"]
+const coreAssets = ["./manifest.json", "/offline", "./css/index.css", "./js/script.js", "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap"]
 
 self.addEventListener('install', (event) => {
   event.waitUntil(

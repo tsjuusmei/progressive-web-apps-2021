@@ -1,8 +1,10 @@
 <%- include('./components/head') -%>
 
   <h1>Mars Rover Photo's</h1>
-  <h2>SOL: <%= sol %></h2>
-  <h2>Earth Date: <%= solData[0].earth_date %> </h2>
+  <h2>SOL: <%= sol %>
+  </h2>
+  <h2>Earth Date: <%= solData[0].earth_date %>
+  </h2>
 
   <ul>
     <% solData.forEach(item=> { %>
@@ -15,4 +17,5 @@
       </li>
       <% }) %>
   </ul>
-  
+
+  <%- include('./components/footer') -%>
