@@ -2,39 +2,40 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
+header {
+  text-align: center;
+}
+
 ul {
   list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20vw, 30vw));
-  grid-gap: 2em;
+  display:flex;
+  flex-wrap: wrap;
 }
 
 li {
-  width: 25vw;
-  display: grid;
+  height: 100%;
+  min-width: 380px;
+  max-width: 500px;
   color: white;
   background: black;
   border-radius: 2em;
-  margin: auto;
-  min-height: 100%;
-}
-
-li a img {
-  width: 90%;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  border-radius: 2em 0 0 2em;
-  height: 100%;
-}
-
-li a p {
-  grid-column-start: 2;
+  margin: 2em auto;
 }
 
 li a {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   text-decoration: none;
   color: white;
   font-weight: 300;
+  display:flex;
 }
+
+li a img {
+  width: 50%;
+  border-radius: 2em 0 0 2em;
+}
+
+li a p {
+  text-align: center;
+  margin: auto;
+}
+

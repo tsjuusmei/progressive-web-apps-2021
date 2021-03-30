@@ -10,14 +10,14 @@ const home = async (req, res) => {
     let tempData = await fetcher(tempsEndpoint)
     let avTemp = averageTemperature(tempData)
 
-    let sol3058Data = await fetcher('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3058&page=1' + process.env.API_KEY)
-    let sol3057Data = await fetcher('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3057&page=1' + process.env.API_KEY)
-    let sol3056Data = await fetcher('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3056&page=1' + process.env.API_KEY)
-    let sol3055Data = await fetcher('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3055&page=1' + process.env.API_KEY)
-    let sol3054Data = await fetcher('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3054&page=1' + process.env.API_KEY)
-    let sol3053Data = await fetcher('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3053&page=1' + process.env.API_KEY)
+    let sol3073Data = await fetcher('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3073&page=1' + process.env.API_KEY)
+    let sol3072Data = await fetcher('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3072&page=1' + process.env.API_KEY)
+    let sol3071Data = await fetcher('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3071&page=1' + process.env.API_KEY)
+    let sol3070Data = await fetcher('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3070&page=1' + process.env.API_KEY)
+    let sol3069Data = await fetcher('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3069&page=1' + process.env.API_KEY)
+    let sol3068Data = await fetcher('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3068&page=1' + process.env.API_KEY)
 
-    solData.push(sol3058Data, sol3057Data, sol3056Data, sol3055Data, sol3054Data, sol3053Data)
+    solData.push(sol3073Data, sol3072Data, sol3071Data, sol3070Data, sol3069Data, sol3068Data)
 
     res.render('home', {
       averageTemp: avTemp,

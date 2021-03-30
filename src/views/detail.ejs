@@ -1,21 +1,22 @@
 <%- include('./components/head') -%>
 
-  <h1>Mars Rover Photo's</h1>
-  <h2>SOL: <%= sol %>
-  </h2>
-  <h2>Earth Date: <%= solData[0].earth_date %>
-  </h2>
+  <header>
+    <h1>Mars Rover Photo's</h1>
+    <h2>SOL: <%= sol %>
+    </h2>
+    <h2>Earth Date: <%= solData[0].earth_date %>
+    </h2>
+  </header>
 
-  <ul>
-    <% solData.forEach(item=> { %>
-      <li>
-        <img src="<%= item.img_src %>" alt="">
-        <p>SOL: <%= item.sol %>
-        </p>
-        <p>Earth date: <%= item.earth_date %>
-        </p>
-      </li>
-      <% }) %>
-  </ul>
+  <main>
+    <ul>
+      <% solData.forEach(item=> { %>
+        <li>
+          <img src="<%= item.img_src %>" alt="">
+          <p>Camera: <%= item.camera.name %></p>
+        </li>
+        <% }) %>
+    </ul>
+  </main>
 
   <%- include('./components/footer') -%>
