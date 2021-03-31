@@ -12,28 +12,25 @@ in your application_
 
 ## Live Link
 
-Visit: https://pwa-guus.herokuapp.com/
+https://pwa-guus.herokuapp.com/
 
 ## Installation
 
-1. Clone the repository:
+### Clone the repository
 
-```
-  git clone https://github.com/tsjuusmei/web-app-from-scratch-2021.git
-```
+`git clone https://github.com/tsjuusmei/progressive-web-apps-2021.git`
 
-2. Install packages
+### Navigate to foler
 
-```
-  npm install 
-  // or yarn install
-```
+`cd progressive-web-apps-2021`
 
-3. Run the app
+### Install packages
 
-```
-  npm run dev
-```
+`npm install`
+
+### Run application
+
+`npm run start`
 
 ## Datasets
 
